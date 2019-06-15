@@ -93,4 +93,13 @@ return [
     'contact_tripadvisor_sub_account' => 'Conta: ',
     'contact_phone' => 'Ligue para nós',
     'contact_phone_sub_number' => 'Número de telefone: ',
+
+    /* Service Detail */
+    'post_on' => 'Postar em:',
+    'Time1' => 'Tempo: 20 minutos',
+    'Time2' => 'Tempo: 30 minutos',
+    'Time3' => 'Tempo: 45 minutos',
+    'Time4' => 'Tempo: 60 minutos',
+    'TimeNull' => 'fora de serviço',
+    'detail' => 'Detalhe:',
 ];

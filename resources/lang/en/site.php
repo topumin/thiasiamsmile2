@@ -101,6 +101,12 @@ return [
     'contact_phone_sub_number' => 'Phone number: ',
 
     /* Service Detail */
-    'service_detail' => '',
+    'post_on' => 'Post on:',
+    'Time1' => 'Time: 20 minutes',
+    'Time2' => 'Time: 30 minutes',
+    'Time3' => 'Time: 45 minutes',
+    'Time4' => 'Time: 60 minutes',
+    'TimeNull' => 'out of service',
+    'detail' => 'Detail:',
 ];
 

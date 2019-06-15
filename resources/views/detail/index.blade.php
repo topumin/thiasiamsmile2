@@ -32,15 +32,18 @@ Siam Smile Thai Massage - Detail
         <ul class="breadcrumb">
             <li><a href="{{url('/')}}">{{ trans('site.home') }}</a></li>
             @if($service->type==1)
-            <li><a href="{{url('/Service/Fusion')}}">{{ trans('site.sub_service1') }}</a></li>
+                <li><a href="{{url('/Service/Fusion')}}">{{ trans('site.sub_service1') }}</a></li>
+                <script>var id_detail = 1;</script>
             @endif
             @if($service->type==2)
-            <li><a href="{{url('/Service/Therapeutic')}}">{{ trans('site.sub_service2.1') }}</a></li>
+                <li><a href="{{url('/Service/Therapeutic')}}">{{ trans('site.sub_service2.1') }}</a></li>
+                <script>var id_detail = 2;</script>
             @endif
             @if($service->type==3)
-            <li><a href="{{url('/Service/Therapeutic')}}">{{ trans('site.sub_service3.1') }}</a></li>
-            @endif
-            <li class="active">{{ trans('site.'.$service->name) }}</li>
+                <li><a href="{{url('/Service/Therapeutic')}}">{{ trans('site.sub_service3.1') }}</a></li>
+                <script>var id_detail = 3;</script>
+            @endif<li>/</li> 
+            <li><a href="#">{{ trans('site.'.$service->name) }}</a></li>
         </ul>
     </div>
     <!-- /col-md-12 -->
@@ -50,21 +53,92 @@ Siam Smile Thai Massage - Detail
         <div id="blog-container" class="col-md-8">
             <!-- Post Info -->
             <div class="post-info">
-                <p><i class="fa fa-clock-o"></i>Posted on Aug 24, 2018 at 9:00 PM</p>
+                <p><i class="far fa-calendar-plus"></i>{{ trans('site.post_on') }} {{ date('d/m/Y H:i:s', strtotime($service->created_at)) }}</p>
                 {{-- <p><i class="fa fa-user"></i>by <a href="#">John Doe</a></p> --}}
                 <!-- Post Comments -->
                 {{-- <p><i class="fa fa-comment"></i>3 Comments</p> --}}
             </div>
             <!-- post-info -->
             <div class="blog-single post-main">
+                <blockquote><span style="font-size: 1.4em">{{ trans('site.'.$service->name) }}</span></blockquote>
                 <!-- Image -->
-                <img class="img-responsive" src="{{ asset('img/services/'.$service->image) }}" alt="">
-                <img class="img-responsive" src="{{ asset('img/services/'.$service->image2) }}" alt="">
-                <img class="img-responsive" src="{{ asset('img/services/'.$service->image3) }}" alt="">
-                <img class="img-responsive" src="{{ asset('img/services/'.$service->image4) }}" alt="">
-                <!-- Post Content -->
-                <blockquote>{{ trans('site.'.$service->name) }}</blockquote>
-                <p>{{ trans('site.'.$service->body) }}</p>
+                @if(isset($service->image))
+                    <img class="img-responsive" src="{{ asset('img/services/'.$service->image) }}" alt="">
+                @endif
+                @if(isset($service->image2))
+                    <img class="img-responsive" src="{{ asset('img/services/'.$service->image2) }}" alt="">
+                @endif
+                @if(isset($service->image3))
+                    <img class="img-responsive" src="{{ asset('img/services/'.$service->image3) }}" alt="">
+                @endif
+                <!-- Detail -->
+                <div class="col-lg-12 margin3 marginb2">
+                    <!-- Alert Info -->
+                    <div class="alert alert-info col-md-12">
+                        <strong>{{ trans('site.detail') }} </strong> {{ trans('site.'.$service->body) }}
+                        <div class="col-12 margin2">
+                            <div class="panel-group" id="accordion">
+                                <!-- Price1 -->
+                                @if(!($service->price1)==NULL)
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h2 class="panel-title">
+                                            <a style="color: #ffcb57;" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1">{{ trans('site.Time1') }}</a>
+                                        </h2>
+                                    </div>
+                                    <!-- /panel-heading -->
+                                    <div id="collapse1" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <h6>
+                                                {{ $service->price1 }}
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endif
+                                <!--/panel -->
+                                <!-- Price2 -->
+                                @if(!($service->price2)==NULL)
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h2 class="panel-title">
+                                            <a style="color: #ffcb57;" class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2">{{ trans('site.Time2') }}</a>
+                                        </h2>
+                                    </div>
+                                    <!-- /panel-heading -->
+                                    <div id="collapse2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <h6>
+                                                {{ $service->price2 }}
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endif
+                                <!--/panel -->
+                                <!-- Price3 -->
+                                @if(!($service->price3)==NULL)
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h2 class="panel-title">
+                                            <a style="color: #ffcb57;" class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3">{{ trans('site.Time3') }}</a>
+                                        </h2>
+                                    </div>
+                                    <div id="collapse3" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <h6>
+                                                {{ $service->price3 }}
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endif
+                                <!--/panel -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--/alert -->
+                </div>
                 <div class="post-info">
                     <!-- Tags -->
                     <div class="blog-tags">
@@ -89,36 +163,30 @@ Siam Smile Thai Massage - Detail
         <!-- /blog-container col-md-8 -->
         <!-- Sidebar Column -->
         <div class="sidebar col-md-4">
-            <!-- About us Widget -->
             <div class="well">
-                <h5 class="sidebar-header">About Us</h5>
-                <div class="text-center">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci
-                        accusamus laudantium.</p>
-                    <!-- Social Media icons -->
-                    <div class="social-media ">
-                        <a href="#" title=""><i class="fab fa-twitter"></i></a>
-                        <a href="#" title=""><i class="fab fa-facebook"></i></a>
-                        <a href="#" title=""><i class="fab fa-google-plus"></i></a>
-                        <a href="#" title=""><i class="fab fa-instagram"></i></a>
-                    </div>
+                <h5 class="sidebar-header">{{ trans('site.service') }}</h5>
+                <div class="row">
+                    <ul class="custom">
+                        <li><a href="{{url('/Service/Fusion')}}">{{ trans('site.sub_service1') }}</a>
+                        </li>
+                        <li><a href="{{url('/Service/Relaxation')}}">{{ trans('site.sub_service2') }}</a>
+                        </li>
+                        <li><a href="{{url('/Service/Therapeutic')}}">{{ trans('site.sub_service3') }}</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <!-- /well -->
-            <!-- Blog Categories -->
             <div class="well">
-                <h5 class="sidebar-header">Categories</h5>
-                <div class="row">
-                    <ul class="custom">
-                        <li><a href="#">Our Story</a>
-                        </li>
-                        <li><a href="#">Events and News</a>
-                        </li>
-                        <li><a href="#">Offers</a>
-                        </li>
-                        <li><a href="#">Our Spa</a>
-                        </li>
-                    </ul>
+                <h5 class="sidebar-header">{{ trans('site.welcome') }}</h5>
+                <div class="text-center">
+                    <p>{{ trans('site.welcome_detail') }}</p>
+                    <!-- Social Media icons -->
+                    <div class="social-media ">
+                            <a href="#" title=""><i class="fab fa-facebook"></i></a>
+                            <a href="#" title=""><i class="fab fa-instagram"></i></a>
+                            <a href="#" title=""><i class="fab fa-tripadvisor"></i></a>
+                    </div>
                 </div>
             </div>
             <!-- /well -->
@@ -129,14 +197,26 @@ Siam Smile Thai Massage - Detail
 </div>
 <!-- /content -->
 </div>
-<!-- /container-fluid -->
-@endsection
-@section('script')
 <!-- Active menu -->
 <script>
     document.getElementById("menu-services-all").style.color = "#ffcb57";
-
+    if(id_detail===1){
+        document.getElementById("menu-services-fusion").style.background = "#ffcb57";
+        document.getElementById("menu-services-fusion").style.color = "#87271d";
+    }
+    if(id_detail===2){
+        document.getElementById("menu-services-relaxation").style.background = "#ffcb57";
+        document.getElementById("menu-services-relaxation").style.color = "#87271d";
+    }
+    if(id_detail===3){
+        document.getElementById("menu-services-therapeutic").style.background = "#ffcb57";
+        document.getElementById("menu-services-therapeutic").style.color = "#87271d";
+    }
+        
 </script>
+<!-- /container-fluid -->
+@endsection
+@section('script')
 <!-- Bootstrap core & Jquery -->
 <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
 <script src="{{ asset('vendor/bootstrap/js/bootstrap.min.js') }}"></script>
