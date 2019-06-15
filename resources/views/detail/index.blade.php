@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-    Siam Smile - Detail
+Siam Smile Thai Massage - Detail
 @endsection
 @section('css')
 <!-- Font files -->
@@ -27,12 +27,20 @@
 <div id="content" class="col-md-10 split pages">
     <div class="blog-head col-md-12 text-center">
         <!-- Heading -->
-        <h1>Our Spa Events</h1>
+        <h1>{{ trans('site.'.$service->name) }}</h1>
         <!-- Breadcrumb -->
         <ul class="breadcrumb">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="blog-home.html">Blog Home</a></li>
-            <li class="active">Our Spa Events</li>
+            <li><a href="{{url('/')}}">{{ trans('site.home') }}</a></li>
+            @if($service->type==1)
+            <li><a href="{{url('/Service/Fusion')}}">{{ trans('site.sub_service1') }}</a></li>
+            @endif
+            @if($service->type==2)
+            <li><a href="{{url('/Service/Therapeutic')}}">{{ trans('site.sub_service2.1') }}</a></li>
+            @endif
+            @if($service->type==3)
+            <li><a href="{{url('/Service/Therapeutic')}}">{{ trans('site.sub_service3.1') }}</a></li>
+            @endif
+            <li class="active">{{ trans('site.'.$service->name) }}</li>
         </ul>
     </div>
     <!-- /col-md-12 -->
@@ -43,9 +51,9 @@
             <!-- Post Info -->
             <div class="post-info">
                 <p><i class="fa fa-clock-o"></i>Posted on Aug 24, 2018 at 9:00 PM</p>
-                <p><i class="fa fa-user"></i>by <a href="#">John Doe</a></p>
+                {{-- <p><i class="fa fa-user"></i>by <a href="#">John Doe</a></p> --}}
                 <!-- Post Comments -->
-                <p><i class="fa fa-comment"></i>3 Comments</p>
+                {{-- <p><i class="fa fa-comment"></i>3 Comments</p> --}}
             </div>
             <!-- post-info -->
             <div class="blog-single post-main">
@@ -84,7 +92,7 @@
             <!-- /blog-single -->
             <!-- Comments Form -->
             <div class="row">
-                <div class="col-md-8 col-centered">
+                {{-- <div class="col-md-8 col-centered">
                     <div class="media comment-form">
                         <h5>Leave a Comment:</h5>
                         <!-- Form Starts -->
@@ -149,7 +157,8 @@
                         <!-- Nested Comment -->
                         <div class="comment media nested">
                             <a href="#">
-                                <img class="media-object img-responsive" src="{{ asset('img/blog/comment3.jpg') }}" alt="">
+                                <img class="media-object img-responsive" src="{{ asset('img/blog/comment3.jpg') }}"
+                                    alt="">
                             </a>
                             <div class="media-body">
                                 <a href="#">
@@ -169,7 +178,7 @@
                         <!-- /media -->
                         <!-- End Nested Comment -->
                     </div>
-                </div>
+                </div> --}}
                 <!-- /media -->
             </div>
             <!-- /comments block -->
@@ -178,7 +187,7 @@
         <!-- Sidebar Column -->
         <div class="sidebar col-md-4">
             <!-- Blog Search -->
-            <div class="well">
+            {{-- <div class="well">
                 <h5 class="sidebar-header">Search</h5>
                 <div class="form-group">
                     <div class="input-group">
@@ -190,9 +199,9 @@
                     <!-- /input-group -->
                 </div>
                 <!-- /form-group -->
-            </div>
+            </div> --}}
             <!-- /well -->
-            <div class="well">
+            {{-- <div class="well">
                 <h5 class="sidebar-header">Popular Posts</h5>
                 <div class="row">
                     <!-- Popular Post posts 1 -->
@@ -232,7 +241,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- /well -->
             <!-- About us Widget -->
             <div class="well">
@@ -288,7 +297,8 @@
 @section('script')
 <!-- Active menu -->
 <script>
-    document.getElementById("menu-services-fusion").style.background = "#ffcb57";
+    document.getElementById("menu-services-all").style.color = "#ffcb57";
+
 </script>
 <!-- Bootstrap core & Jquery -->
 <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>

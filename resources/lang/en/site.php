@@ -99,5 +99,8 @@ return [
     'contact_tripadvisor_sub_account' => 'Account: ',
     'contact_phone' => 'Call us',
     'contact_phone_sub_number' => 'Phone number: ',
+
+    /* Service Detail */
+    'service_detail' => '',
 ];
 
