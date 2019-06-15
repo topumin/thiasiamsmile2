@@ -58,191 +58,37 @@ Siam Smile Thai Massage - Detail
             <!-- post-info -->
             <div class="blog-single post-main">
                 <!-- Image -->
-                <img class="img-responsive" src="{{ asset('img/blog/blogmain1.jpg') }}" alt="">
+                <img class="img-responsive" src="{{ asset('img/services/'.$service->image) }}" alt="">
+                <img class="img-responsive" src="{{ asset('img/services/'.$service->image2) }}" alt="">
+                <img class="img-responsive" src="{{ asset('img/services/'.$service->image3) }}" alt="">
+                <img class="img-responsive" src="{{ asset('img/services/'.$service->image4) }}" alt="">
                 <!-- Post Content -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras venenatis tincidunt rhoncus. Integer
-                    pulvinar elit ligula, laoreet imperdiet magna consectetur vel. Nullam tempus, tellus sed laoreet
-                    porttitor, urna quam efficitur magna, id vestibulum arcu massa eget risus. Mauris sagittis elit nec
-                    magna congue aliquam. Nam sollicitudin urna nunc, eu iaculis leo vulputate vel. Donec ultrices ipsum
-                    laoreet suscipit consectetur. In pulvinar diam arcu, eu tincidunt arcu mollis quis. Sed vulputate
-                    pharetra enim ac pretium. Quisque at rutrum nunc, nec dictum ligula. Vestibulum magna nibh, dapibus
-                    at eros et, auctor sagittis ipsum.</p>
-                <blockquote>Men dolor sit amet, consectetur adipisiras sit amet nibh libero, in gravida nulla ulla vel
-                    metus scelerisque ante sollicitudin commodo cras purus.</blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis
-                    unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat
-                    perspiciatis. Enim, iure!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras venenatis tincidunt rhoncus. Integer
-                    pulvinar elit ligula, laoreet imperdiet magna consectetur vel. Nullam tempus, tellus sed laoreet
-                    porttitor, urna quam efficitur magna, id vestibulum arcu massa eget risus. Mauris sagittis elit nec
-                    magna congue aliquam. Nam sollicitudin urna nunc, eu iaculis leo vulputate vel. Donec ultrices ipsum
-                    laoreet suscipit consectetur. In pulvinar diam arcu, eu tincidunt arcu mollis quis. Sed vulputate
-                    pharetra enim ac pretium. Quisque at rutrum nunc, nec dictum ligula. Vestibulum magna nibh, dapibus
-                    at eros et, auctor sagittis ipsum.</p>
+                <blockquote>{{ trans('site.'.$service->name) }}</blockquote>
+                <p>{{ trans('site.'.$service->body) }}</p>
                 <div class="post-info">
                     <!-- Tags -->
                     <div class="blog-tags">
                         <p><i class="fa fa-tags"></i>Tags:</p>
-                        <a href="#">Massage</a> <a href="#">Wellbeing</a> <a href="#">Experience</a> <a href="#">Hot
-                            Stones</a>
+                        @if($service->type==1)
+                        <a href="#">{{ trans('site.sub_service1') }}</a>
+                        @endif
+                        @if($service->type==2)
+                        <a href="#">{{ trans('site.sub_service2.1') }}</a>
+                        @endif
+                        @if($service->type==3)
+                        <a href="#">{{ trans('site.sub_service3.1') }}</a>
+                        @endif
+                        {{-- <a href="#">Massage</a> <a href="#">Wellbeing</a> <a href="#">Experience</a> <a href="#">Hot
+                            Stones</a> --}}
                     </div>
                 </div>
                 <!-- /post-info -->
             </div>
             <!-- /blog-single -->
-            <!-- Comments Form -->
-            <div class="row">
-                {{-- <div class="col-md-8 col-centered">
-                    <div class="media comment-form">
-                        <h5>Leave a Comment:</h5>
-                        <!-- Form Starts -->
-                        <div class="form-group margin1">
-                            <label>Name<span class="required">*</span></label>
-                            <input type="text" name="name" class="form-control input-field" required="">
-                            <label>Email Adress <span class="required">*</span></label>
-                            <input type="email" name="email" class="form-control input-field" required="">
-                            <label>Comment<span class="required">*</span></label>
-                            <textarea name="comment" id="comment" class="textarea-field form-control" rows="3"
-                                required=""></textarea>
-                        </div>
-                        <!--  Button -->
-                        <button type="submit" id="comment_btn" value="Submit" class="btn btn-primary">Send
-                            Comment</button>
-                    </div>
-                </div>
-                <!-- /col-md-7 -->
-            </div>
-            <!-- /row -->
-            <!-- Posted Comments -->
-            <div class="comments-block">
-                <hr>
-                <h5 class="text-center">Comments</h5>
-                <!-- Comment -->
-                <div class="comment media">
-                    <a href="#">
-                        <img class="media-object  img-responsive" src="{{ asset('img/blog/comment1.jpg') }}" alt="">
-                    </a>
-                    <div class="media-body">
-                        <a href="#">
-                            <h6 class="media-heading">Maria Silva
-                                <small>August 25, 2018 at 9:30 PM</small>
-                            </h6>
-                        </a>
-                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
-                            commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce
-                            condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                        </p>
-                        <!-- Reply Button -->
-                        <a class="btn text-right">Reply</a>
-                    </div>
-                </div>
-                <!-- /media -->
-                <!-- Comment -->
-                <div class="comment media">
-                    <a href="#">
-                        <img class="media-object  img-responsive" src="{{ asset('img/blog/comment2.jpg') }}" alt="">
-                    </a>
-                    <div class="media-body">
-                        <a href="#">
-                            <h6 class="media-heading">Jonas Lindberg
-                                <small>August 25, 2018 at 9:30 PM</small>
-                            </h6>
-                        </a>
-                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
-                            commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce
-                            condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                        </p>
-                        <!-- Reply Button -->
-                        <a class="btn text-right">Reply</a>
-                        <!-- Nested Comment -->
-                        <div class="comment media nested">
-                            <a href="#">
-                                <img class="media-object img-responsive" src="{{ asset('img/blog/comment3.jpg') }}"
-                                    alt="">
-                            </a>
-                            <div class="media-body">
-                                <a href="#">
-                                    <h6 class="media-heading">Nested Comment
-                                        <small>August 25, 2018 at 9:30 PM</small>
-                                    </h6>
-                                </a>
-                                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
-                                    sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra
-                                    turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue
-                                    felis in faucibus.
-                                </p>
-                                <!-- Reply Button -->
-                                <a class="btn text-right">Reply</a>
-                            </div>
-                        </div>
-                        <!-- /media -->
-                        <!-- End Nested Comment -->
-                    </div>
-                </div> --}}
-                <!-- /media -->
-            </div>
-            <!-- /comments block -->
         </div>
         <!-- /blog-container col-md-8 -->
         <!-- Sidebar Column -->
         <div class="sidebar col-md-4">
-            <!-- Blog Search -->
-            {{-- <div class="well">
-                <h5 class="sidebar-header">Search</h5>
-                <div class="form-group">
-                    <div class="input-group">
-                        <input type="text" class="form-control">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">Go!</button>
-                        </span>
-                    </div>
-                    <!-- /input-group -->
-                </div>
-                <!-- /form-group -->
-            </div> --}}
-            <!-- /well -->
-            {{-- <div class="well">
-                <h5 class="sidebar-header">Popular Posts</h5>
-                <div class="row">
-                    <!-- Popular Post posts 1 -->
-                    <div class="blog-popular col-xs-12">
-                        <a href="blog-single.html">
-                            <div class="col-xs-5">
-                                <img src="{{ asset('img/blog/blogpopular1.jpg') }}" alt="" class="img-responsive">
-                            </div>
-                            <div class="col-xs-7">
-                                <h6>The benefits of Feet Massage</h6>
-                                <p>Posted on 12 dec 2016</p>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Popular Post posts 2 -->
-                    <div class="blog-popular col-xs-12">
-                        <a href="blog-single.html">
-                            <div class="col-xs-5">
-                                <img src="{{ asset('img/blog/blogpopular1.jpg') }}" alt="" class="img-responsive">
-                            </div>
-                            <div class="col-xs-7">
-                                <h6>New Spa Services</h6>
-                                <p>Posted on 29 dec 2016</p>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Popular Post posts 3 -->
-                    <div class="blog-popular col-xs-12">
-                        <a href="blog-single.html">
-                            <div class="col-xs-5">
-                                <img src="{{ asset('img/blog/blogpopular1.jpg') }}" alt="" class="img-responsive">
-                            </div>
-                            <div class="col-xs-7">
-                                <h6>Day Spa for couples</h6>
-                                <p>Posted on 22 jan 2018</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div> --}}
-            <!-- /well -->
             <!-- About us Widget -->
             <div class="well">
                 <h5 class="sidebar-header">About Us</h5>
@@ -273,15 +119,6 @@ Siam Smile Thai Massage - Detail
                         <li><a href="#">Our Spa</a>
                         </li>
                     </ul>
-                </div>
-            </div>
-            <!-- /well -->
-            <!-- Tags Widget -->
-            <div class="well">
-                <h5 class="sidebar-header">Tags</h5>
-                <div class="blog-tags">
-                    <a href="#">Massage</a> <a href="#">Offers</a> <a href="#">Events</a> <a href="#">Wellbeing</a> <a
-                        href="#">Experience</a> <a href="#">Hot Stones</a>
                 </div>
             </div>
             <!-- /well -->
