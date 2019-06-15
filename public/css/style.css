@@ -751,7 +751,7 @@ Last change: 1 April 2019
 }
  #prices .img-price {
      transition: all 0.35s ease-in-out;
-     width: 150px;
+     width: 200px;
      margin: auto;
      margin-top: 15px;
      margin-bottom: 20px;
@@ -1179,7 +1179,7 @@ Last change: 1 April 2019
      margin: 0px;
 }
  .social-media i:hover {
-     color: #cecece;
+     color: #ffebbd;
      transition: all .5s ease-in-out;
 }
  .navbar-info {

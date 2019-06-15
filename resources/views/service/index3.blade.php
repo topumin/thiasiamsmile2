@@ -110,9 +110,9 @@
                                 @endif
                                 <!-- social icons -->
                                 <div class="icons">
-                                    <a href="#"><i class="fa fa-envelope"></i></a>
-                                    <a href="#"> <i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"> <i class="fab fa-instagram"></i></a>
+                                    {{-- <a href="#"><i class="fa fa-envelope"></i></a> --}}
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u=thaisiamsmile.com"> <i class="fab fa-facebook-f"></i></a>
+                                    {{-- <a href="#"> <i class="fab fa-instagram"></i></a> --}}
                                 </div>
                                 <!-- caption -->
                                 <figcaption>

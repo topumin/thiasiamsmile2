@@ -32,7 +32,7 @@
                 <div class="inside-wrapper container">
                     <!-- section-heading -->
                     <div class="section-heading">
-                        <h2>Contact us</h2>
+                        <h2>{{ trans('site.contact_us') }}</h2>
                     </div>
                     <!-- /section-heading -->
                     <div class="col-md-10 col-md-offset-1">
@@ -44,11 +44,11 @@
                                     <!-- row -->
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <label>Name<span class="required">*</span></label>
+                                            <label>{{ trans('site.name') }}<span class="required">*</span></label>
                                             <input type="text" name="name" class="form-control input-field" required="">
                                         </div>
                                         <div class="col-md-6">
-                                            <label>Email Adress <span class="required">*</span></label>
+                                            <label>{{ trans('site.email') }}<span class="required">*</span></label>
                                             <input type="email" name="email" class="form-control input-field"
                                                 required="">
                                         </div>
@@ -57,18 +57,17 @@
                                     <!-- row -->
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <label>Subject</label>
+                                            <label>{{ trans('site.subject') }}</label>
                                             <input type="text" name="subject" class="form-control input-field">
                                         </div>
                                         <div class="col-md-12">
-                                            <label>Message<span class="required">*</span></label>
+                                            <label>{{ trans('site.massage') }}<span class="required">*</span></label>
                                             <textarea name="message" id="message" class="textarea-field form-control"
                                                 rows="3" required=""></textarea>
                                         </div>
                                     </div>
                                     <!-- /row -->
-                                    <button type="submit" id="submit_btn" value="Submit" class="btn btn-primary">Send
-                                        message</button>
+                                    <button type="submit" id="submit_btn" value="Submit" class="btn btn-primary">{{ trans('site.send_massage') }}</button>
                                 </div>
                                 <!-- Contact results -->
                                 <div id="contact_results"></div>
@@ -97,8 +96,8 @@
                                 <!-- contact-icon info-->
                                 <div class="contact-icon-info">
                                     <h6>{{ trans('site.contact_social') }}</h6>
-                                    <p>{{ trans('site.contact_social_sub_facebook') }} <a href="#">Siam Smile Thai</a></p>
-                                    <p>{{ trans('site.contact_social_sub_instagram') }} <a href="#">Siam Smile Thai</a></p>
+                                    <p>{{ trans('site.contact_social_sub_facebook') }} <a href="https://www.facebook.com/Siam-Smile-Thai-Massage-Lisboa-360120577962368/" title="Siam Smile Thai Massage Lisboa">Siam Smile Thai</a></p>
+                                    <p>{{ trans('site.contact_social_sub_instagram') }} <a href="https://www.instagram.com/thaisiamsmile/" title="thaisiamsmile">thaisiamsmile</a></p>
                                 </div>
                             </div>
                         </div>
@@ -111,7 +110,7 @@
                                 <div class="contact-icon-info">
                                     <h6>{{ trans('site.contact_tripadvisor') }}</h6>
                                     <p>{{ trans('site.contact_tripadvisor_sub_account') }}</p>
-                                    <p><a href="#">Siam Smile Thai</a></p>
+                                    <p><a href="https://th.tripadvisor.com/Attraction_Review-g189158-d17541745-Reviews-Siam_Smile_Thai_Massage-Lisbon_Lisbon_District_Central_Portugal.html" title="Siam Smile Thai Massage">Siam Smile Thai Massage</a></p>
                                 </div>
                             </div>
                         </div>

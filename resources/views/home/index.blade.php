@@ -44,7 +44,7 @@
                     <h2 class="slogan">"{{ trans('site.slow_gan') }}"</h2>
                     <p class="lead">{{ trans('site.welcome_detail') }}</p>
                     <!-- Buttons -->
-                    <a class="btn btn-primary" href="{{ url('/Contact') }}">Contact us</a> 
+                    <a class="btn btn-primary" href="{{ url('/Contact') }}">{{ trans('site.contact_us') }}</a> 
                     {{-- <a class="btn btn-primary"href="{{ url('/Contact') }}">More info</a> --}}
                 </div>
                 <!-- /inside-wrapper -->

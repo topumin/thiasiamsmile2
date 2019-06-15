@@ -39,25 +39,25 @@
                     <ul class="nav nav-tabs col-md-12  margin1" id="myTab">
                         <li class="active col-md-5 text-center">
                             <a href="#tab1" data-toggle="tab">
-                                <img class="img-responsive img-circle img-price" src="img/prices/price1.jpg" alt="">
+                                <img class="img-responsive img-circle img-price" src="{{ asset('img/prices/package_a.jpg') }}" alt="">
                                 {{ trans('site.pack_a') }}
                             </a>
                         </li>
                         <li class="col-md-5 text-center">
                             <a href="#tab2" data-toggle="tab">
-                                <img class="img-responsive img-circle img-price" src="img/prices/price2.jpg" alt="">
+                                <img class="img-responsive img-circle img-price" src="{{ asset('img/prices/package_b.jpg') }}" alt="">
                                 {{ trans('site.pack_b') }}
                             </a>
                         </li>
                         <li class="col-md-5 text-center">
                             <a href="#tab3" data-toggle="tab">
-                                <img class="img-responsive img-circle img-price" src="img/prices/price3.jpg"alt="">
+                                <img class="img-responsive img-circle img-price" src="{{ asset('img/prices/package_c.jpg') }}"alt="">
                                 {{ trans('site.pack_c') }}
                             </a>
                         </li>
                         <li class="col-md-5 text-center">
                             <a href="#tab4" data-toggle="tab">
-                                <img class="img-responsive img-circle img-price" src="img/prices/price1.jpg" alt="">
+                                <img class="img-responsive img-circle img-price" src="{{ asset('img/prices/package_d.jpg') }}" alt="">
                                 {{ trans('site.pack_d') }}
                             </a>
                         </li>

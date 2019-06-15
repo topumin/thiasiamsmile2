@@ -99,6 +99,12 @@ return [
     'contact_tripadvisor_sub_account' => 'Account: ',
     'contact_phone' => 'Call us',
     'contact_phone_sub_number' => 'Phone number: ',
+    'contact_us' => 'Contact us',
+    'name' => 'Name',
+    'email' => 'Email Address',
+    'subject' => 'Subject',
+    'massage' => 'Massage',
+    'send_massage' => 'Send Massage',
 
     /* Service Detail */
     'post_on' => 'Post on:',

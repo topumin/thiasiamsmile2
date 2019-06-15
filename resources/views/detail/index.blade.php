@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-Siam Smile Thai Massage - Detail
+    Siam Smile Thai Massage - Detail
 @endsection
 @section('css')
 <!-- Font files -->
@@ -23,6 +23,9 @@ Siam Smile Thai Massage - Detail
 <script src="{{ asset('js/prefixfree.min.js') }}"></script>
 @endsection
 @section('content')
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
+
 <!-- ===== content starts  ===== -->
 <div id="content" class="col-md-10 split pages">
     <div class="blog-head col-md-12 text-center">
@@ -33,17 +36,21 @@ Siam Smile Thai Massage - Detail
             <li><a href="{{url('/')}}">{{ trans('site.home') }}</a></li>
             @if($service->type==1)
                 <li><a href="{{url('/Service/Fusion')}}">{{ trans('site.sub_service1') }}</a></li>
-                <script>var id_detail = 1;</script>
             @endif
             @if($service->type==2)
-                <li><a href="{{url('/Service/Therapeutic')}}">{{ trans('site.sub_service2.1') }}</a></li>
-                <script>var id_detail = 2;</script>
+                <li><a href="{{url('/Service/Relaxation')}}">{{ trans('site.sub_service2.1') }}</a></li>
             @endif
             @if($service->type==3)
                 <li><a href="{{url('/Service/Therapeutic')}}">{{ trans('site.sub_service3.1') }}</a></li>
-                <script>var id_detail = 3;</script>
-            @endif<li>/</li> 
+            @endif
             <li><a href="#">{{ trans('site.'.$service->name) }}</a></li>
+            @if($service->type==1)
+                <script> var id_detail = 1; </script>
+            @elseif($service->type==2)
+                <script> var id_detail = 2; </script>
+            @elseif($service->type==3)
+                <script> var id_detail = 3; </script>
+            @endif
         </ul>
     </div>
     <!-- /col-md-12 -->
@@ -139,24 +146,25 @@ Siam Smile Thai Massage - Detail
                     </div>
                     <!--/alert -->
                 </div>
-                <div class="post-info">
+                <div class="post-info marginb2">
                     <!-- Tags -->
                     <div class="blog-tags">
                         <p><i class="fa fa-tags"></i>Tags:</p>
                         @if($service->type==1)
-                        <a href="#">{{ trans('site.sub_service1') }}</a>
+                        <a href="{{url('/Service/Relaxation')}}">{{ trans('site.sub_service1') }}</a>
                         @endif
                         @if($service->type==2)
-                        <a href="#">{{ trans('site.sub_service2.1') }}</a>
+                        <a href="{{url('/Service/Relaxation')}}">{{ trans('site.sub_service2.1') }}</a>
                         @endif
                         @if($service->type==3)
-                        <a href="#">{{ trans('site.sub_service3.1') }}</a>
+                        <a href="{{url('/Service/Therapeutic')}}">{{ trans('site.sub_service3.1') }}</a>
                         @endif
                         {{-- <a href="#">Massage</a> <a href="#">Wellbeing</a> <a href="#">Experience</a> <a href="#">Hot
                             Stones</a> --}}
                     </div>
                 </div>
                 <!-- /post-info -->
+                <div class="fb-comments" data-href="https://www.thaisiamsmile.com" data-width="auto" data-numposts="5"></div>
             </div>
             <!-- /blog-single -->
         </div>
@@ -183,9 +191,9 @@ Siam Smile Thai Massage - Detail
                     <p>{{ trans('site.welcome_detail') }}</p>
                     <!-- Social Media icons -->
                     <div class="social-media ">
-                            <a href="#" title=""><i class="fab fa-facebook"></i></a>
-                            <a href="#" title=""><i class="fab fa-instagram"></i></a>
-                            <a href="#" title=""><i class="fab fa-tripadvisor"></i></a>
+                            <a href="https://www.facebook.com/Siam-Smile-Thai-Massage-Lisboa-360120577962368/" title=""><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/thaisiamsmile/" title=""><i class="fab fa-instagram"></i></a>
+                            <a href="https://th.tripadvisor.com/Attraction_Review-g189158-d17541745-Reviews-Siam_Smile_Thai_Massage-Lisbon_Lisbon_District_Central_Portugal.html" title=""><i class="fab fa-tripadvisor"></i></a>
                     </div>
                 </div>
             </div>

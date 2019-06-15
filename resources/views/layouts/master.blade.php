@@ -57,7 +57,7 @@
                                     <a id="menu-services-all" class="dropdown-toggle" data-toggle="dropdown" href="#">{{ trans('site.service') }}
                                         <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="aaa" id="menu-services-fusion" href="{{url('/Service/Fusion')}}">{{ trans('site.sub_service1') }}</a></li>
+                                        <li><a id="menu-services-fusion" href="{{url('/Service/Fusion')}}">{{ trans('site.sub_service1') }}</a></li>
                                         <li><a id="menu-services-relaxation" href="{{url('/Service/Relaxation')}}">{{ trans('site.sub_service2.1') }}</a></li>
                                         <li><a id="menu-services-therapeutic" href="{{url('/Service/Therapeutic')}}">{{ trans('site.sub_service3.1') }}</a></li>
                                     </ul>
@@ -87,9 +87,9 @@
                         <br> {!! trans('site.tel') !!} </p>
                     <!--Social icons -->
                     <div class="social-media ">
-                        <a href="#" title=""><i class="fab fa-facebook"></i></a>
-                        <a href="#" title=""><i class="fab fa-instagram"></i></a>
-                        <a href="#" title=""><i class="fab fa-tripadvisor"></i></a>
+                        <a href="https://www.facebook.com/Siam-Smile-Thai-Massage-Lisboa-360120577962368/" title="Siam Smile Thai Massage Lisboa"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/thaisiamsmile/" title="thaisiamsmile"><i class="fab fa-instagram"></i></a>
+                        <a href="https://th.tripadvisor.com/Attraction_Review-g189158-d17541745-Reviews-Siam_Smile_Thai_Massage-Lisbon_Lisbon_District_Central_Portugal.html" title="Siam Smile Thai Massage"><i class="fab fa-tripadvisor"></i></a>
                     </div>
                 </div>
                 <!-- /navbar-info -->

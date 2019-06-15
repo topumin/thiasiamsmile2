@@ -93,6 +93,12 @@ return [
     'contact_tripadvisor_sub_account' => 'Conta: ',
     'contact_phone' => 'Ligue para nós',
     'contact_phone_sub_number' => 'Número de telefone: ',
+    'contact_us' => 'Contate nos',
+    'name' => 'Nome',
+    'email' => 'Endereço de e-mail',
+    'subject' => 'Sujeito',
+    'massage' => 'Mensagem',
+    'send_massage' => 'Enviar Massagem',
 
     /* Service Detail */
     'post_on' => 'Postar em:',

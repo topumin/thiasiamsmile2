@@ -115,9 +115,9 @@
                                     <img src="{{ asset('img/services/'.$service->image) }}" class="img-fluid" alt="" />
                                     <!-- social icons -->
                                     <div class="icons">
-                                        <a href="#"><i class="fa fa-envelope"></i></a>
-                                        <a href="#"> <i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"> <i class="fab fa-instagram"></i></a>
+                                        {{-- <i href="mailto:example@gmail.com"><i class="fa fa-envelope"></i></i> --}}
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=thaisiamsmile.com" target="_blank"> <i class="fab fa-facebook-f"></i></a>
+                                        {{-- <a href="#"> <i class="fab fa-instagram"></i></a> --}}
                                     </div>
                                     <!-- caption -->
                                     <figcaption>
