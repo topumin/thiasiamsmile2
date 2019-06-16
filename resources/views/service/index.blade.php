@@ -147,10 +147,7 @@
                                 <div class="testimonial">
                                     <div class="content">
                                         <p class="description">
-                                            Aliquam erat volutpat In id fermentum augue, ut pellentesque leo. Maecenas
-                                            at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit
-                                            id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor
-                                            placerat, nec elementum ipsum convall.
+                                            On a recent trip to Lisbon I ended up needing a massage as I have bad hips. I had looked up Siam Smile Thai Massage and was most happy with my hour-long massage. It was a great help and the staff was welcoming despite me not having made a booking ahead. My masseur was very thorough and helpful!!! Definitely recommend this special haven of peace and healing!!
                                         </p>
                                     </div>
                                     <!-- /content -->
@@ -159,8 +156,8 @@
                                     </div>
                                     <!-- /testimonial-pic -->
                                     <div class="testimonial-review">
-                                        <h6 class="testimonial-title">Lucianna Smith</h6>
-                                        <span>Teacher</span>
+                                        <h6 class="testimonial-title">Elsa Mendonca Pinto</h6>
+                                        <span>Lawyer</span>
                                     </div>
                                     <!-- /testimonial-review -->
                                 </div>
@@ -169,10 +166,7 @@
                                 <div class="testimonial">
                                     <div class="content">
                                         <p class="description">
-                                            Aliquam erat volutpat In id fermentum augue, ut pellentesque leo. Maecenas
-                                            at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit
-                                            id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor
-                                            placerat, nec elementum ipsum convall.
+                                            On a recent trip to Lisbon I ended up needing a massage as I have bad hips. I had looked up Siam Smile Thai Massage and was most happy with my hour-long massage. It was a great help and the staff was welcoming despite me not having made a booking ahead. My masseur was very thorough and helpful!!! Definitely recommend this special haven of peace and healing!!
                                         </p>
                                     </div>
                                     <!-- /content -->
@@ -181,8 +175,8 @@
                                     </div>
                                     <!-- /testimonial-pic -->
                                     <div class="testimonial-review">
-                                        <h6 class="testimonial-title">John Sadana</h6>
-                                        <span>Doctor</span>
+                                        <h6 class="testimonial-title">Elsa Mendonca Pinto</h6>
+                                        <span>Lawyer</span>
                                     </div>
                                     <!-- /testimonial-review -->
                                 </div>
@@ -191,10 +185,7 @@
                                 <div class="testimonial">
                                     <div class="content">
                                         <p class="description">
-                                            Aliquam erat volutpat In id fermentum augue, ut pellentesque leo. Maecenas
-                                            at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit
-                                            id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor
-                                            placerat, nec elementum ipsum convall.
+                                            On a recent trip to Lisbon I ended up needing a massage as I have bad hips. I had looked up Siam Smile Thai Massage and was most happy with my hour-long massage. It was a great help and the staff was welcoming despite me not having made a booking ahead. My masseur was very thorough and helpful!!! Definitely recommend this special haven of peace and healing!!
                                         </p>
                                     </div>
                                     <!-- /content -->
@@ -203,8 +194,8 @@
                                     </div>
                                     <!-- /testimonial-pic -->
                                     <div class="testimonial-review">
-                                        <h6 class="testimonial-title">Jane Janeth</h6>
-                                        <span>Librarian</span>
+                                        <h6 class="testimonial-title">Elsa Mendonca Pinto</h6>
+                                        <span>Lawyer</span>
                                     </div>
                                     <!-- /testimonial-review -->
                                 </div>
