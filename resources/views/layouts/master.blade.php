@@ -82,9 +82,10 @@
                 <!--/sidebar-nav -->
                 <div class="navbar-info hidden-sm hidden-xs hidden-md">
                     <p class="small-text"><i class="fas fa-map-marker-alt margin-icon"></i>{{ trans('site.addrs') }}</p>
-                    <p class="small-text"><i class="far fa-clock margin-icon"></i>{{ trans('site.open') }}<br />
+                    <p class="small-text"><i class="far fa-clock margin-icon"></i>{{ trans('site.open') }}<br/>
                         {{ trans('site.open1') }}
                         <br> {!! trans('site.tel') !!} </p>
+                    <p class="small-text"><i class="fas fa-code margin-icon"></i></i>{!! trans('site.credit') !!}<br/></p>
                     <!--Social icons -->
                     <div class="social-media ">
                         <a href="https://www.facebook.com/Siam-Smile-Thai-Massage-Lisboa-360120577962368/" title="Siam Smile Thai Massage Lisboa"><i class="fab fa-facebook"></i></a>

@@ -155,5 +155,8 @@ return [
 
     // Package_D
     'package_d_header' => 'This Package includes 5 Massages of Foot Reflexology, 45 minutes each.',
+
+    // End credit
+    'credit' => 'Desenvolvido: <a href="mailto:pumin.wongsiri@gmail.com" style="color: #fff">topumin</a> ',
 ];
 

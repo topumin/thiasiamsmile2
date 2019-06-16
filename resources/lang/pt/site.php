@@ -147,4 +147,8 @@ return [
 
     // Package_D
     'package_d_header' => 'Este pacote inclui 5 massagens aos pés de 45 minutos cada, pode escolher entre',
+
+    // End credit
+    'credit' => 'Developed: <a href="mailto:pumin.wongsiri@gmail.com" style="color: #fff">topumin</a> ',
+
 ];
