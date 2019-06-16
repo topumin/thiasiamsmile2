@@ -60,7 +60,7 @@
         <div id="blog-container" class="col-md-8">
             <!-- Post Info -->
             <div class="post-info">
-                <p><i class="far fa-calendar-plus"></i>{{ trans('site.post_on') }} {{ date('d/m/Y H:i:s', strtotime($service->created_at)) }}</p>
+                <p><i class="far fa-calendar-plus"></i>{{ trans('site.post_on') }} {{ date('d/m/Y H:i A', strtotime($service->created_at)) }}</p>
                 {{-- <p><i class="fa fa-user"></i>by <a href="#">John Doe</a></p> --}}
                 <!-- Post Comments -->
                 {{-- <p><i class="fa fa-comment"></i>3 Comments</p> --}}
@@ -82,7 +82,7 @@
                 <div class="col-lg-12 margin3 marginb2">
                     <!-- Alert Info -->
                     <div class="alert alert-info col-md-12">
-                        <strong>{{ trans('site.detail') }} </strong> {{ trans('site.'.$service->body) }}
+                        <strong>{{ trans('site.detail') }} </strong> {!! trans('site.'.$service->body) !!}
                         <div class="col-12 margin2">
                             <div class="panel-group" id="accordion">
                                 <!-- Price1 -->

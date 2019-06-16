@@ -747,11 +747,11 @@ Last change: 1 April 2019
 }
 /*=========================== Prices ============================ */
  #prices .nav-tabs{
-     margin-bottom:30px;
+     margin-bottom:50px;
 }
  #prices .img-price {
      transition: all 0.35s ease-in-out;
-     width: 200px;
+     width: 180px;
      margin: auto;
      margin-top: 15px;
      margin-bottom: 20px;
@@ -1327,7 +1327,8 @@ Last change: 1 April 2019
 /*Paragraph image */
  .img-paragraph {
      padding: 10px;
-     width: 65%;
+     width: 100%;
+     margin-bottom: 2em;
 }
 /* custom ul */
  ul.custom {
@@ -1842,7 +1843,8 @@ Last change: 1 April 2019
          width: 90%;
          left: 5%;
          margin-top: 0px!important;
-         top: 30%;
+         /* top: 30%; */
+         top: 15%;
          position: absolute;
     }
      .navbar {
@@ -1864,7 +1866,8 @@ Last change: 1 April 2019
          margin-top: 10px;
     }
      .content-wrapper {
-         top: 89px;
+         /* top: 89px; */
+         top: 5%;
          min-height:100%;
     }
      .content-box.home {

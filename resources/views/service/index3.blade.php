@@ -42,7 +42,8 @@
                         </div>
                         <div class="col-lg-6">
                             <h4>{{ trans('site.TSS') }}</h4>
-                            <p>{{ trans('site.our_service_detail') }}</p>
+                            <p style="text-align: justify; text-indent: 40px">{{ trans('site.our_service_detail') }}</p>
+                            <p style="text-align: justify; text-indent: 40px">{{ trans('site.our_service_detail2') }}</p>
                             <ul class="custom pl-0">
                                 <li>{{ trans('site.sub_service1') }}</li>
                                 <li>{{ trans('site.sub_service2') }}</li>

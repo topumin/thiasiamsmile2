@@ -36,7 +36,7 @@
                     </div>
                     <!-- /section-heading -->
                     <!-- Navigation -->
-                    <ul class="nav nav-tabs col-md-12  margin1" id="myTab">
+                    <ul class="nav nav-tabs col-md-12 margin1 marginb5" id="myTab">
                         <li class="active col-md-5 text-center">
                             <a href="#tab1" data-toggle="tab">
                                 <img class="img-responsive img-circle img-price" src="{{ asset('img/prices/package_a.jpg') }}" alt="">
@@ -70,529 +70,257 @@
                                 <!-- Prices: Hair & Face -->
                                 <div class="prices-main">
                                     <!-- First Row -->
-                                    <div class="col-md-6">
-                                        <!-- menu body -->
+                                    <div class="col-md-12">
                                         <div class="menu-body">
                                             <div class="menu-section">
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Haircut
+                                                <div class="col-lg-12">
+                                                    <!-- Alert Info -->
+                                                    <div class="alert alert-info col-md-12">
+                                                        <strong style="font-size: 2em;">{{ trans('site.detail2') }}: {{ trans('site.package2') }} A</strong>
+                                                        <p class="margin3" style="font-weight: 700;">{{ trans('site.package_a_header') }}</p>
+                                                        <div class="menu-item" style="padding-right: 20px; padding-left: 20px">
+                                                            <div class="menu-item-name  margin2">
+                                                                <i class="flaticon-spa"></i> &nbsp&nbsp <span style="font-weight: 300 !important;font-size: 14px !important;"> {!!  trans('site.itemc2') !!} </span>
+                                                            </div>
+                                                            <div class="menu-item-name  margin2">
+                                                                <i class="flaticon-spa"></i> &nbsp&nbsp <span style="font-weight: 300 !important;font-size: 14px !important;"> {!!  trans('site.itemc3') !!} </span>
+                                                            </div>
+                                                            <div class="menu-item-name  margin2">
+                                                                <i class="flaticon-spa"></i> &nbsp&nbsp <span style="font-weight: 300 !important;font-size: 14px !important;"> {!!  trans('site.itemc5') !!} </span>
+                                                            </div>
+                                                            <div class="menu-item-name  margin2">
+                                                                <i class="flaticon-spa"></i> &nbsp&nbsp <span style="font-weight: 300 !important;font-size: 14px !important;"> {!!  trans('site.itemc9') !!} </span>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Collapse -->
+                                                        <div class="panel-group" id="accordion">
+                                                            <!-- Option1 -->
+                                                            <div class="panel">
+                                                                <div class="panel-heading">
+                                                                    <h2 class="panel-title">
+                                                                        <a style="color: #ffcb57;" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1A">{{ trans('site.option1') }}</a>
+                                                                    </h2>
+                                                                </div>
+                                                                <div id="collapse1A" class="panel-collapse collapse in">
+                                                                    <div class="panel-body">
+                                                                        <h6>
+                                                                            {{ trans('site.price') }} 200 EUR
+                                                                            <br>
+                                                                            {{ trans('site.package_valid_3') }}        
+                                                                        </h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--/Option1 -->
+                                                        </div>
+                                                        <!-- /Collapse -->
                                                     </div>
-                                                    <div class="menu-item-price">
-                                                        $50
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
+                                                    <!--/alert -->
                                                 </div>
-                                                <!-- Item ends -->
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Scalp Massage
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $70
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Colouring
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $120
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Styling or Straightening
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $60
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
                                             </div>
                                             <!--/ menu section -->
                                         </div>
-                                        <!-- / menu body -->
                                     </div>
-                                    <!-- /col-md-6 -->
-                                    <!-- Second Row -->
-                                    <div class="col-md-6">
-                                        <div class="menu-body">
-                                            <div class="menu-section">
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Eyebrow Design
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $32
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Fake Lashes Aplication
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $40
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Facial Massage
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $80
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Laser Treatment
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $200
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
-                                            </div>
-                                            <!--/ menu section -->
-                                        </div>
-                                        <!-- / menu body -->
-                                    </div>
-                                    <!-- /col-md-6 -->
+                                    <!-- /col-md-12 -->
                                 </div>
                                 <!-- /prices-main -->
                             </div>
                             <!-- /#tab1 -->
                             <!--Tab Content 2 -->
                             <div class="tab-pane fade" id="tab2">
-                                <!-- Prices: Skin & Body -->
+                                <!-- Prices: Hair & Face -->
                                 <div class="prices-main">
                                     <!-- First Row -->
-                                    <div class="col-md-6">
-                                        <!-- menu body -->
+                                    <div class="col-md-12">
                                         <div class="menu-body">
                                             <div class="menu-section">
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Haircut
+                                                <div class="col-lg-12">
+                                                    <!-- Alert Info -->
+                                                    <div class="alert alert-info col-md-12">
+                                                        <strong style="font-size: 2em;">{{ trans('site.detail2') }}: {{ trans('site.package2') }} B</strong>
+                                                        <p class="margin3" style="font-weight: 700;">{{ trans('site.package_b_header') }}</p>
+                                                        <div class="menu-item" style="padding-right: 20px; padding-left: 20px">
+                                                            <div class="menu-item-name  margin2">
+                                                                <i class="flaticon-spa"></i> &nbsp&nbsp <span style="font-weight: 300 !important;font-size: 14px !important;"> {!!  trans('site.itemc6') !!} </span>
+                                                            </div>
+                                                            <div class="menu-item-name  margin2">
+                                                                <i class="flaticon-spa"></i> &nbsp&nbsp <span style="font-weight: 300 !important;font-size: 14px !important;"> {!!  trans('site.itemc7') !!} </span>
+                                                            </div>
+                                                            <div class="menu-item-name  margin2">
+                                                                <i class="flaticon-spa"></i> &nbsp&nbsp <span style="font-weight: 300 !important;font-size: 14px !important;"> {!!  trans('site.itemc8') !!} </span>
+                                                            </div>
+                                                            <div class="menu-item-name  margin2">
+                                                                <i class="flaticon-spa"></i> &nbsp&nbsp <span style="font-weight: 300 !important;font-size: 14px !important;"> {!!  trans('site.itemc10') !!} </span>
+                                                            </div>
+                                                            <div class="menu-item-name  margin2">
+                                                                <i class="flaticon-spa"></i> &nbsp&nbsp <span style="font-weight: 300 !important;font-size: 14px !important;"> {!!  trans('site.itemc11') !!} </span>
+                                                            </div>
+                                                            <div class="menu-item-name  margin2">
+                                                                <i class="flaticon-spa"></i> &nbsp&nbsp <span style="font-weight: 300 !important;font-size: 14px !important;"> {!!  trans('site.itemc12') !!} </span>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Collapse -->
+                                                        <div class="panel-group" id="accordion">
+                                                            <!-- Option1 -->
+                                                            <div class="panel">
+                                                                <div class="panel-heading">
+                                                                    <h2 class="panel-title">
+                                                                        <a style="color: #ffcb57;" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1B">{{ trans('site.option1') }}</a>
+                                                                    </h2>
+                                                                </div>
+                                                                <div id="collapse1B" class="panel-collapse collapse in">
+                                                                    <div class="panel-body">
+                                                                        <h6>
+                                                                            {{ trans('site.price') }} 225 EUR
+                                                                            <br>
+                                                                            {{ trans('site.package_b_header_1') }}
+                                                                            <br>
+                                                                            {{ trans('site.package_valid_3') }}        
+                                                                        </h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--/Option1 -->
+                                                            <!-- Option2 -->
+                                                            <div class="panel">
+                                                                <div class="panel-heading">
+                                                                    <h2 class="panel-title">
+                                                                        <a style="color: #ffcb57;" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2B">{{ trans('site.option2') }}</a>
+                                                                    </h2>
+                                                                </div>
+                                                                <div id="collapse2B" class="panel-collapse collapse">
+                                                                    <div class="panel-body">
+                                                                        <h6>
+                                                                            {{ trans('site.price') }} 300 EUR
+                                                                            <br>
+                                                                            {{ trans('site.package_b_header_2') }}
+                                                                            <br>
+                                                                            {{ trans('site.package_valid_3') }}     
+                                                                        </h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--/Option2 -->      
+                                                        </div>
+                                                        <!-- /Collapse -->
                                                     </div>
-                                                    <div class="menu-item-price">
-                                                        $50
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
+                                                    <!--/alert -->
                                                 </div>
-                                                <!-- Item ends -->
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Scalp Massage
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $70
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Colouring
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $120
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Styling or Straightening
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $60
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
                                             </div>
                                             <!--/ menu section -->
                                         </div>
-                                        <!-- / menu body -->
                                     </div>
-                                    <!-- /col-md-6 -->
-                                    <!-- Second Row -->
-                                    <div class="col-md-6">
-                                        <div class="menu-body">
-                                            <div class="menu-section">
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Eyebrow Design
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $32
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Fake Lashes Aplication
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $40
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Facial Massage
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $80
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Laser Treatment
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $200
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
-                                            </div>
-                                            <!--/ menu section -->
-                                        </div>
-                                        <!-- / menu body -->
-                                    </div>
-                                    <!-- /col-md-6 -->
+                                    <!-- /col-md-12 -->
                                 </div>
                                 <!-- /prices-main -->
                             </div>
                             <!-- /#tab2 -->
-                            <!-- Tab Content 3 -->
+                            <!--Tab Content 3 -->
                             <div class="tab-pane fade" id="tab3">
-                                <!-- Prices: Wellbeing -->
+                                <!-- Prices: Hair & Face -->
                                 <div class="prices-main">
                                     <!-- First Row -->
-                                    <div class="col-md-6">
-                                        <!-- menu body -->
+                                    <div class="col-md-12">
                                         <div class="menu-body">
                                             <div class="menu-section">
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Haircut
+                                                <div class="col-lg-12">
+                                                    <!-- Alert Info -->
+                                                    <div class="alert alert-info col-md-12">
+                                                        <strong style="font-size: 2em;">{{ trans('site.detail2') }}: {{ trans('site.package2') }} C</strong>
+                                                        <p class="margin3" style="font-weight: 700;">{{ trans('site.package_c_header') }}</p>
+                                                        <div class="menu-item" style="padding-right: 20px; padding-left: 20px">
+                                                            <div class="menu-item-name  margin2">
+                                                                <i class="flaticon-spa"></i> &nbsp&nbsp <span style="font-weight: 300 !important;font-size: 14px !important;"> {!!  trans('site.itemc3') !!} </span>
+                                                            </div>
+                                                            <div class="menu-item-name  margin2">
+                                                                <i class="flaticon-spa"></i> &nbsp&nbsp <span style="font-weight: 300 !important;font-size: 14px !important;"> {!!  trans('site.itemc5') !!} </span>
+                                                            </div>
+                                                            <div class="menu-item-name  margin2">
+                                                                <i class="flaticon-spa"></i> &nbsp&nbsp <span style="font-weight: 300 !important;font-size: 14px !important;"> {!!  trans('site.itemc10') !!} </span>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Collapse -->
+                                                        <div class="panel-group" id="accordion">
+                                                            <!-- Option1 -->
+                                                            <div class="panel">
+                                                                <div class="panel-heading">
+                                                                    <h2 class="panel-title">
+                                                                        <a style="color: #ffcb57;" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1C">{{ trans('site.option1') }}</a>
+                                                                    </h2>
+                                                                </div>
+                                                                <div id="collapse1C" class="panel-collapse collapse in">
+                                                                    <div class="panel-body">
+                                                                        <h6>
+                                                                            {{ trans('site.price') }} 105 EUR
+                                                                            <br>
+                                                                            {{ trans('site.package_valid_1') }}       
+                                                                        </h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--/Option1 -->
+                                                        </div>
+                                                        <!-- /Collapse -->
                                                     </div>
-                                                    <div class="menu-item-price">
-                                                        $50
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
+                                                    <!--/alert -->
                                                 </div>
-                                                <!-- Item ends -->
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Scalp Massage
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $70
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Colouring
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $120
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Styling or Straightening
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $60
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
                                             </div>
                                             <!--/ menu section -->
                                         </div>
-                                        <!-- / menu body -->
                                     </div>
-                                    <!-- /col-md-6 -->
-                                    <!-- Second Row -->
-                                    <div class="col-md-6">
-                                        <div class="menu-body">
-                                            <div class="menu-section">
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Eyebrow Design
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $32
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Fake Lashes Aplication
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $40
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Facial Massage
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $80
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Laser Treatment
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $200
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
-                                            </div>
-                                            <!--/ menu section -->
-                                        </div>
-                                        <!-- / menu body -->
-                                    </div>
-                                    <!-- /col-md-6 -->
+                                    <!-- /col-md-12 -->
                                 </div>
                                 <!-- /prices-main -->
                             </div>
                             <!-- /#tab3 -->
-                            <!-- #tab4 -->
-                            <div class="tab-pane fade in" id="tab4">
+                             <!--Tab Content 4 -->
+                            <div class="tab-pane fade" id="tab4">
                                 <!-- Prices: Hair & Face -->
                                 <div class="prices-main">
                                     <!-- First Row -->
-                                    <div class="col-md-6">
-                                        <!-- menu body -->
+                                    <div class="col-md-12">
                                         <div class="menu-body">
                                             <div class="menu-section">
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Haircut
+                                                <div class="col-lg-12">
+                                                    <!-- Alert Info -->
+                                                    <div class="alert alert-info col-md-12">
+                                                        <strong style="font-size: 2em;">{{ trans('site.detail2') }}: {{ trans('site.package2') }} D</strong>
+                                                        <p class="margin3" style="font-weight: 700;">{{ trans('site.package_d_header') }}</p>
+                                                        <div class="menu-item" style="padding-right: 20px; padding-left: 20px">
+                                                            <div class="menu-item-name  margin2">
+                                                                <i class="flaticon-spa"></i> &nbsp&nbsp <span style="font-weight: 300 !important;font-size: 14px !important;"> {!!  trans('site.itemc3') !!} </span>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Collapse -->
+                                                        <div class="panel-group" id="accordion">
+                                                            <!-- Option1 -->
+                                                            <div class="panel">
+                                                                <div class="panel-heading">
+                                                                    <h2 class="panel-title">
+                                                                        <a style="color: #ffcb57;" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1D">{{ trans('site.option1') }}</a>
+                                                                    </h2>
+                                                                </div>
+                                                                <div id="collapse1D" class="panel-collapse collapse in">
+                                                                    <div class="panel-body">
+                                                                        <h6>
+                                                                            {{ trans('site.price') }} 150 EUR
+                                                                            <br>
+                                                                            {{ trans('site.package_valid_1') }}     
+                                                                        </h6>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--/Option1 -->
+                                                        </div>
+                                                        <!-- /Collapse -->
                                                     </div>
-                                                    <div class="menu-item-price">
-                                                        $50
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
+                                                    <!--/alert -->
                                                 </div>
-                                                <!-- Item ends -->
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Scalp Massage
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $70
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Colouring
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $120
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Styling or Straightening
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $60
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
                                             </div>
                                             <!--/ menu section -->
                                         </div>
-                                        <!-- / menu body -->
                                     </div>
-                                    <!-- /col-md-6 -->
-                                    <!-- Second Row -->
-                                    <div class="col-md-6">
-                                        <div class="menu-body">
-                                            <div class="menu-section">
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Eyebrow Design
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $32
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Fake Lashes Aplication
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $40
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Facial Massage
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $80
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
-                                                <!-- Item starts -->
-                                                <div class="menu-item">
-                                                    <div class="menu-item-name">
-                                                        Laser Treatment
-                                                    </div>
-                                                    <div class="menu-item-price">
-                                                        $200
-                                                    </div>
-                                                    <div class="menu-item-description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                                                    </div>
-                                                </div>
-                                                <!-- Item ends -->
-                                            </div>
-                                            <!--/ menu section -->
-                                        </div>
-                                        <!-- / menu body -->
-                                    </div>
-                                    <!-- /col-md-6 -->
+                                    <!-- /col-md-12 -->
                                 </div>
                                 <!-- /prices-main -->
                             </div>

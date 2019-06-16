@@ -11,6 +11,7 @@ return [
         'sub_service3.1' => 'Therapeutic',
 
     'package' => 'Package',
+    'package2' => 'PACKAGE',
     'contact' => 'Contact',
 
     /*Home Page*/
@@ -27,6 +28,7 @@ return [
     /* ETC */
     'TSS' => 'Siam Smile Thai Massage',
     'our_service_detail' => 'Whether you seek relaxation, flexibility, or pain relief, we can help. Friendly, welcoming and authentically Thai, we are massage specialists.',
+    'our_service_detail2' => 'All our Therapists are Thai nationality and come from the best massage schools internationally certified, Highly experienced with many of them having over 10 years experience in Thai Massage, some of our staff are qualified at the Advanced Thai Medical Massage Therapy level.',
     'our_package' => 'Our Packages',
 
     /*Fusion Focus*/
@@ -44,11 +46,11 @@ return [
 
     /*Relaxation*/
     'item5' => 'THAI AROMATHERAPY MASSAGE',
-    'detail_it5' => 'This Massage is the ideal choice of care and soothing results. A light, calming massage using a blend of essential oils, which works the whole body. This indulgent treatment leaving you feeling deeply relaxed and re-charged. If you prefer NO AROMA, Please! Let us know before service.',
+    'detail_it5' => 'This Massage is the ideal choice of care and soothing results. A light, calming massage using a blend of essential oils, which works the whole body. This indulgent treatment leaving you feeling deeply relaxed and re-charged. If you prefer <b>NO AROMA</b>, Please! Let us know before service. <br><br> <b>Essential Oil:</b> Jasmine or Lemongrass <br>',
 
     'item6' => 'THAI HERBAL HEAT MASSAGE',
     'detail_it6' => 'An excellent treatment using a blend of traditional Thai herbs. A heated parcel of traditional Thai herbs is administered directly to the body, penetrating deep into the muscle restoring balance and alleviating pain.
-                    Oil is used in this treatment.',
+                   <b>Oil is used in this treatment.</b>',
 
     'item7' => 'HOT STONE MASSAGE',
     'detail_it7' => 'This heavenly treatment uses heated volcanic basalt stones and oil. The combination of heat and massage reduces muscular tension, soothes the nervous system and relieves stress and emotional fatigue.',
@@ -57,28 +59,29 @@ return [
     'detail_it8' => 'Coconut oil is packed with benefits as it is healing and nourishing to the skin. It soothes and hydrates dry skin and can help treat many skin conditions. The ultimate natural vitamin E. Good for dry skin.',
 
     'item9' => 'PREGNANCY MASSAGE',
-    'detail_it9' => 'Service is provided by experienced massage therapist who is specialized in post and prenatal massage. Baby oil or natural carrier oil without color and odor is used during the session.
-                    •	Pregnancy Massage is usually gentler than many other massage techniques.
-                    •	It focuses more on techniques that aid the circulatory and lymphatic systems, to help ensure a healthy flow of blood to mother and baby.
-                    
-                    Pregnancy Massage available only after 3 – 7 months.',
+    'detail_it9' => '<span>Service is provided by experienced massage therapist who is specialized in post and prenatal massage. Baby oil or natural carrier oil without color and odor is used during the session.
+                    <ul style="font-size: 14px;">
+                        <li><span>Pregnancy Massage is usually gentler than many other massage techniques.</span></li>
+                        <li>It focuses more on techniques that aid the circulatory and lymphatic systems, to help ensure a healthy flow of blood to mother and baby.</li>
+                    </ul>
+                    <b style="text-align: right;">Pregnancy Massage available only after 3 – 7 months.</b><span>',
 
     /*THERAPEUTIC*/
     'item10' => 'TRADITIONAL THAI  MASSAGE',
-    'detail_it10' => 'We can call “Thai Yoga”. The movements are based on stretching and pressure points. A perfect mix of subtle stretching with rhythmic massaging and compressions to balance the body system and stimulate energy flow. No oil is used and wearing a cotton pajamas.',
+    'detail_it10' => 'We can call “Thai Yoga”. The movements are based on stretching and pressure points. A perfect mix of subtle stretching with rhythmic massaging and compressions to balance the body system and stimulate energy flow. <b>No oil is used and wearing a cotton pajamas.</b>',
 
     'item11' => 'THAI HEALING TOUCH',
     'detail_it11' => 'This massage is Advanced Thai Therapeutic Massage. Acupressure and deep pressure techniques are applied. This treatment is used of balm or oil or none at all, depends on the techniques of Therapist.
-                        A medium to Strong Massage recommended for age especially those who have to undergo surgery at the hospital from various symptoms such as knee pain, hips, legs, bone overlapping, office syndrome, etc.',
+                        <br>A medium to Strong Massage recommended for age especially those who have to undergo surgery at the hospital from various symptoms such as knee pain, hips, legs, bone overlapping, office syndrome, etc.',
 
     'item12' => 'SPORT MASSAGE',
-    'detail_it12' => 'Deeply revitalizing massage. Our therapists using technique of thumbs, palms pressure with firm strokes. The intensive strokes work to loosen and relax the  muscles. Oil is used in this treatment.',
+    'detail_it12' => 'Deeply revitalizing massage. Our therapists using technique of thumbs, palms pressure with firm strokes. The intensive strokes work to loosen and relax the  muscles. <b>Oil is used in this treatment.</b>',
 
     /* Packages */
-    'pack_a' => 'Package A',
-    'pack_b' => 'Package B',
-    'pack_c' => 'Package C',
-    'pack_d' => 'Package D',
+    'pack_a' => 'PACKAGE A',
+    'pack_b' => 'PACKAGE B',
+    'pack_c' => 'PACKAGE C',
+    'pack_d' => 'PACKAGE D',
 
     /*Price start at*/
     'price_sa' => 'starts at only',
@@ -114,5 +117,43 @@ return [
     'Time4' => 'Time: 60 minutes',
     'TimeNull' => 'out of service',
     'detail' => 'Detail:',
+    'detail2' => 'DETAIL',
+
+    /* Package */
+
+    // Itemc
+    'itemc1' => 'Head Massage',
+    'itemc2' => 'Back, Head, Neck & Shoulders  Massage',
+    'itemc3' => 'Foot Reflexology Massage',
+    'itemc4' => 'Abdominal Massage',
+    'itemc5' => 'Thai Aromatherapy Massage',
+    'itemc6' => 'Thai Herbal Heat Massage',
+    'itemc7' => 'Hot Stone Massage',
+    'itemc8' => 'Coconut Oil Massage',
+    'itemc9' => 'Pregnancy Massage',
+    'itemc10' => 'Traditional Thai  Massage',
+    'itemc11' => 'Thai Healing Touch',
+    'itemc12' => 'Sport Massage',
+    'option1' => 'Option 1',
+    'option2' => 'Option 2',
+    'option3' => 'Option 3',
+    'price' => 'Price: ',
+
+    // Package_A
+    'package_a_header' => 'This Package includes 5 massages, 60 minutes each, you can choose from',
+    
+    'package_valid_1' => 'This Package is valid for 1 months.',
+    'package_valid_3' => 'This Package is valid for 3 months.',
+
+    // Package_B
+    'package_b_header' => 'Two choices for choose:',
+    'package_b_header_1' => '5 massages, 60 min each 225 EUR',
+    'package_b_header_2' => '5 massages, 90 min each 300 EUR',
+
+    // Package_C
+    'package_c_header' => 'This Package includes 3 massages, 60 minutes each, you can choose from',
+
+    // Package_D
+    'package_d_header' => 'This Package includes 5 Massages of Foot Reflexology, 45 minutes each.',
 ];
 

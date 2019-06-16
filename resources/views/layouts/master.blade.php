@@ -43,7 +43,7 @@
                             </button>
                             <!-- Logo -->
                             <div class="brand">
-                                <a href="index.html">
+                                <a href="{{url('/')}}">
                                     <img src="{{ asset('img/logo.png') }}" alt="" class="img-responsive center-block">
                                 </a>
                             </div>
