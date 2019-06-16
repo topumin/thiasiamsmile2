@@ -12,475 +12,223 @@
 
         <!-- Styles -->
         <style>
-            html {
-                line-height: 1.15;
-                    -ms-text-size-adjust: 100%;
-                -webkit-text-size-adjust: 100%;
-            }
-
+            @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
             body {
-                margin: 0;
+            font-family: 'Open Sans';
+            padding: 0;
+            margin: 0;
             }
 
-            header,
-            nav,
-            section {
-                display: block;
+            a,
+            a:visited {
+            color: #ef4824;
+            outline: none;
+            text-decoration: none;
             }
 
-            figcaption,
-            main {
-                display: block;
+            a:hover,
+            a:focus,
+            a:visited:hover {
+            color: #ef4824;
+            text-decoration: none;
             }
 
-            a {
-                background-color: transparent;
-                -webkit-text-decoration-skip: objects;
+            * {
+            paading: 0;
+            margin: 0;
             }
 
-            strong {
-                font-weight: inherit;
+            #oopss {
+            /* background: #ef4824; */
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: 400;
+            font-size: 20px;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            line-height: 1.5em;
+            z-index: 9999;
+            left: 0px;
             }
 
-            strong {
-                font-weight: bolder;
+            #error-text {
+            top: 30%;
+            position: relative;
+            font-size: 40px;
+            color: #eee;
             }
 
-            code {
-                font-family: monospace, monospace;
-                font-size: 1em;
+            #error-text a {
+            color: #ef4824;
+            background: #ffcb57;
             }
 
-            dfn {
-                font-style: italic;
+            #error-text a:hover {
+            background: #ff9d35;
             }
 
-            svg:not(:root) {
-                overflow: hidden;
+            #error-text p {
+            color: #eee;
+            margin: 70px 0 0 0;
             }
 
-            button,
-            input {
-                font-family: sans-serif;
-                font-size: 100%;
-                line-height: 1.15;
-                margin: 0;
+            #error-text i {
+            margin-left: 10px;
             }
 
-            button,
-            input {
-                overflow: visible;
+            #error-text p.hmpg {
+            margin: 40px 0 0 0;
             }
 
-            button {
-                text-transform: none;
+            #error-text span {
+            /* position: relative; */
+            background: #ffcb57;
+            color: #ef4824;
+            font-size: 300%;
+            padding: 0 20px;
+            border-radius: 5px;
+            font-weight: bolder;
+            transition: all .5s;
+            cursor: pointer;
+            margin: 0 0 40px 0;
             }
 
-            button,
-            html [type="button"],
-            [type="reset"],
-            [type="submit"] {
-                -webkit-appearance: button;
+            #error-text span:hover {
+            background: #ff9d35;
+            color: #ef4824;
+            -webkit-animation: jelly .5s;
+            -moz-animation: jelly .5s;
+            -ms-animation: jelly .5s;
+            -o-animation: jelly .5s;
+            animation: jelly .5s;
             }
 
-            button::-moz-focus-inner,
-            [type="button"]::-moz-focus-inner,
-            [type="reset"]::-moz-focus-inner,
-            [type="submit"]::-moz-focus-inner {
-                border-style: none;
-                padding: 0;
+            #error-text span:after {
+            top: 100%;
+            left: 50%;
+            border: solid transparent;
+            content: '';
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba(136, 183, 213, 0);
+            border-top-color: #ef4824;
+            border-width: 7px;
+            margin-left: -7px;
             }
 
-            button:-moz-focusring,
-            [type="button"]:-moz-focusring,
-            [type="reset"]:-moz-focusring,
-            [type="submit"]:-moz-focusring {
-                outline: 1px dotted ButtonText;
+            @-webkit-keyframes jelly {
+            from, to {
+                -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
             }
-
-            legend {
-                -webkit-box-sizing: border-box;
-                        box-sizing: border-box;
-                color: inherit;
-                display: table;
-                max-width: 100%;
-                padding: 0;
-                white-space: normal;
-            }
-
-            [type="checkbox"],
-            [type="radio"] {
-                -webkit-box-sizing: border-box;
-                        box-sizing: border-box;
-                padding: 0;
-            }
-
-            [type="number"]::-webkit-inner-spin-button,
-            [type="number"]::-webkit-outer-spin-button {
-                height: auto;
-            }
-
-            [type="search"] {
-                -webkit-appearance: textfield;
-                outline-offset: -2px;
-            }
-
-            [type="search"]::-webkit-search-cancel-button,
-            [type="search"]::-webkit-search-decoration {
-                -webkit-appearance: none;
-            }
-
-            ::-webkit-file-upload-button {
-                -webkit-appearance: button;
-                font: inherit;
-            }
-
-            menu {
-                display: block;
-            }
-
-            canvas {
-                display: inline-block;
-            }
-
-            template {
-                display: none;
-            }
-
-            [hidden] {
-                display: none;
-            }
-
-            html {
-                -webkit-box-sizing: border-box;
-                        box-sizing: border-box;
-                font-family: sans-serif;
-            }
-
-            *,
-            *::before,
-            *::after {
-                -webkit-box-sizing: inherit;
-                        box-sizing: inherit;
-            }
-
-            p {
-                margin: 0;
-            }
-
-            button {
-                background: transparent;
-                padding: 0;
-            }
-
-            button:focus {
-                outline: 1px dotted;
-                outline: 5px auto -webkit-focus-ring-color;
-            }
-
-            *,
-            *::before,
-            *::after {
-                border-width: 0;
-                border-style: solid;
-                border-color: #dae1e7;
-            }
-
-            button,
-            [type="button"],
-            [type="reset"],
-            [type="submit"] {
-                border-radius: 0;
-            }
-
-            button,
-            input {
-                font-family: inherit;
-            }
-
-            input::-webkit-input-placeholder {
-                color: inherit;
-                opacity: .5;
-            }
-
-            input:-ms-input-placeholder {
-                color: inherit;
-                opacity: .5;
-            }
-
-            input::-ms-input-placeholder {
-                color: inherit;
-                opacity: .5;
-            }
-
-            input::placeholder {
-                color: inherit;
-                opacity: .5;
-            }
-
-            button,
-            [role=button] {
-                cursor: pointer;
-            }
-
-            .bg-transparent {
-                background-color: transparent;
-            }
-
-            .bg-white {
-                background-color: #fff;
-            }
-
-            .bg-teal-light {
-                background-color: #64d5ca;
-            }
-
-            .bg-blue-dark {
-                background-color: #2779bd;
-            }
-
-            .bg-indigo-light {
-                background-color: #7886d7;
-            }
-
-            .bg-purple-light {
-                background-color: #a779e9;
-            }
-
-            .bg-no-repeat {
-                background-repeat: no-repeat;
-            }
-
-            .bg-cover {
-                background-size: cover;
-            }
-
-            .border-grey-light {
-                border-color: #dae1e7;
-            }
-
-            .hover\:border-grey:hover {
-                border-color: #b8c2cc;
-            }
-
-            .rounded-lg {
-                border-radius: .5rem;
-            }
-
-            .border-2 {
-                border-width: 2px;
-            }
-
-            .hidden {
-                display: none;
-            }
-
-            .flex {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-            }
-
-            .items-center {
-                -webkit-box-align: center;
-                    -ms-flex-align: center;
-                        align-items: center;
-            }
-
-            .justify-center {
-                -webkit-box-pack: center;
-                    -ms-flex-pack: center;
-                        justify-content: center;
-            }
-
-            .font-sans {
-                font-family: Nunito, sans-serif;
-            }
-
-            .font-light {
-                font-weight: 300;
-            }
-
-            .font-bold {
-                font-weight: 700;
-            }
-
-            .font-black {
-                font-weight: 900;
-            }
-
-            .h-1 {
-                height: .25rem;
+            25% {
+                -webkit-transform: scale(.9, 1.1);
+                transform: scale(.9, 1.1);
             }
-
-            .leading-normal {
-                line-height: 1.5;
-            }
-
-            .m-8 {
-                margin: 2rem;
-            }
-
-            .my-3 {
-                margin-top: .75rem;
-                margin-bottom: .75rem;
-            }
-
-            .mb-8 {
-                margin-bottom: 2rem;
+            50% {
+                -webkit-transform: scale(1.1, .9);
+                transform: scale(1.1, .9);
             }
-
-            .max-w-sm {
-                max-width: 30rem;
-            }
-
-            .min-h-screen {
-                min-height: 100vh;
-            }
-
-            .py-3 {
-                padding-top: .75rem;
-                padding-bottom: .75rem;
-            }
-
-            .px-6 {
-                padding-left: 1.5rem;
-                padding-right: 1.5rem;
+            75% {
+                -webkit-transform: scale(.95, 1.05);
+                transform: scale(.95, 1.05);
             }
-
-            .pb-full {
-                padding-bottom: 100%;
             }
 
-            .absolute {
-                position: absolute;
+            @keyframes jelly {
+            from, to {
+                -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
             }
-
-            .relative {
-                position: relative;
+            25% {
+                -webkit-transform: scale(.9, 1.1);
+                transform: scale(.9, 1.1);
             }
-
-            .pin {
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
+            50% {
+                -webkit-transform: scale(1.1, .9);
+                transform: scale(1.1, .9);
             }
-
-            .text-black {
-                color: #22292f;
+            75% {
+                -webkit-transform: scale(.95, 1.05);
+                transform: scale(.95, 1.05);
             }
-
-            .text-grey-darkest {
-                color: #3d4852;
             }
+            /* CSS Error Page Responsive */
 
-            .text-grey-darker {
-                color: #606f7b;
+            @media only screen and (max-width:640px) {
+            #error-text span {
+                font-size: 200%;
             }
-
-            .text-2xl {
-                font-size: 1.5rem;
+            #error-text a:hover {
+                color: #ef4824;
             }
-
-            .text-5xl {
-                font-size: 3rem;
             }
 
-            .uppercase {
-                text-transform: uppercase;
+            .back:active {
+            -webkit-transform: scale(0.95);
+            -moz-transform: scale(0.95);
+            transform: scale(0.95);
+            background: #f53b3b;
+            color: #ef4824;
             }
 
-            .antialiased {
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
+            .back:hover {
+            background: #4c4c4c;
+            color: #ef4824;
             }
 
-            .tracking-wide {
-                letter-spacing: .05em;
+            .back {
+            text-decoration: none;
+            background: #5b5a5a;
+            color: #ef4824;
+            padding: 10px 20px;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+            border-radius: 3px;
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            transform: scale(1);
+            transition: all 0.5s ease-out;
             }
 
-            .w-16 {
-                width: 4rem;
+            body.v{
+                overflow: hidden;    
+                -webkit-animation: v 10s infinite;
+                animation: v 10s infinite;
             }
 
-            .w-full {
-                width: 100%;
+            @keyframes v{
+            0% {background:#ef4824;;}
+            20%{background:#ff4511;}
+            40%{background:#ff672b;;}
+            60%{background:#ff7926;}
+            80%{background:#ef4824;;}
+            100%{background:#ff4511;}
             }
-
-            @media (min-width: 768px) {
-                .md\:bg-left {
-                    background-position: left;
-                }
 
-                .md\:bg-right {
-                    background-position: right;
-                }
-
-                .md\:flex {
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: flex;
-                }
-
-                .md\:my-6 {
-                    margin-top: 1.5rem;
-                    margin-bottom: 1.5rem;
-                }
-
-                .md\:min-h-screen {
-                    min-height: 100vh;
-                }
-
-                .md\:pb-0 {
-                    padding-bottom: 0;
-                }
-
-                .md\:text-3xl {
-                    font-size: 1.875rem;
-                }
-
-                .md\:text-15xl {
-                    font-size: 9rem;
-                }
-
-                .md\:w-1\/2 {
-                    width: 50%;
-                }
+            @-webkit-keyframes v{
+            0% {background:#ef4824;;}
+            20%{background:#ff7411;}
+            40%{background:#ef4824;;}
+            60%{background:#ff672b;}
+            80%{background:#ef4824;;}
+            100%{background:#ff672b;}
             }
 
-            @media (min-width: 992px) {
-                .lg\:bg-center {
-                    background-position: center;
-                }
-            }
         </style>
     </head>
-    <body class="antialiased font-sans">
-        <div class="md:flex min-h-screen">
-            <div class="w-full md:w-1/2 bg-white flex items-center justify-center">
-                <div class="max-w-sm m-8">
-                    <div class="text-black text-5xl md:text-15xl font-black">
-                        @yield('code', __('Oh no'))
-                    </div>
-
-                    <div class="w-16 h-1 bg-purple-light my-3 md:my-6"></div>
-
-                    <p class="text-grey-darker text-2xl md:text-3xl font-light mb-8 leading-normal">
-                        @yield('message')
-                    </p>
-
-                    <a href="{{ app('router')->has('home') ? route('home') : url('/') }}">
-                        <button class="bg-transparent text-grey-darkest font-bold uppercase tracking-wide py-3 px-6 border-2 border-grey-light hover:border-grey rounded-lg">
-                            {{ __('Go Home') }}
-                        </button>
-                    </a>
-                </div>
-            </div>
-
-            <div class="relative pb-full md:flex md:pb-0 md:min-h-screen w-full md:w-1/2">
-                @yield('image')
-            </div>
+    <body class="v">
+        <div id='oopss'>
+        <div id='error-text'>
+            <span>@yield('code')</span>
+            <p>@yield('message')</p>
+            <p class='hmpg'><a href='{{ app('router')->has('home') ? route('home') : url('/') }}' class="back">GO HOME</a></p>
+        </div>
         </div>
     </body>
 </html>
