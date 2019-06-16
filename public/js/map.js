@@ -1,7 +1,7 @@
   $(document).ready(function () {
 
 		//Open street  Map
-		var coord = [38.73252, -9.14125]; // <--- coordinates here
+		var coord = [38.73245, -9.14121]; // <--- coordinates here
 
 		var map = L.map('map-canvas', { scrollWheelZoom:false}).setView(coord, 19);
 
