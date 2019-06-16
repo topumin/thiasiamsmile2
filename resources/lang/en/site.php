@@ -111,10 +111,10 @@ return [
 
     /* Service Detail */
     'post_on' => 'Post on:',
-    'Time1' => 'Time: 20 minutes',
-    'Time2' => 'Time: 30 minutes',
-    'Time3' => 'Time: 45 minutes',
-    'Time4' => 'Time: 60 minutes',
+    'Time1' => 'Option 1',
+    'Time2' => 'Option 2',
+    'Time3' => 'Option 3',
+    'Time4' => 'Option 4',
     'TimeNull' => 'out of service',
     'detail' => 'Detail:',
     'detail2' => 'DETAIL',
@@ -157,6 +157,6 @@ return [
     'package_d_header' => 'This Package includes 5 Massages of Foot Reflexology, 45 minutes each.',
 
     // End credit
-    'credit' => 'Desenvolvido: <a href="mailto:pumin.wongsiri@gmail.com" style="color: #fff">topumin</a> ',
+    'credit' => 'Desenvolvido: <a href="mailto:pumin.wongsiri@gmail.com" style="color: #fff"Option 1>topumin</a> ',
 ];
 

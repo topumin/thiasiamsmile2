@@ -103,10 +103,10 @@ return [
 
     /* Service Detail */
     'post_on' => 'Postar em:',
-    'Time1' => 'Tempo: 20 minutos',
-    'Time2' => 'Tempo: 30 minutos',
-    'Time3' => 'Tempo: 45 minutos',
-    'Time4' => 'Tempo: 60 minutos',
+    'Time1' => 'Opção 1',
+    'Time3' => 'Opção 3',
+    'Time2' => 'Opção 2',
+    'Time4' => 'Opção 4',
     'TimeNull' => 'fora de serviço',
     'detail' => 'Detalhe:',
     'detail2' => 'DETALHE',

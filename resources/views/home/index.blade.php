@@ -30,10 +30,10 @@
     <div id="home">
         <div class="slideshow">
             <!-- Ken Burns - Images path on CSS file -->
+            <div class="slideshow-image"><img src="img/slideshow/bed2.jpg" alt=""></div>
             <div class="slideshow-image"><img src="img/slideshow/herb.jpg" alt=""></div>
-            <div class="slideshow-image"><img src="img/slideshow/coco.jpg" alt=""></div>
-            <div class="slideshow-image"><img src="img/slideshow/massage.jpg" alt=""></div>
             <div class="slideshow-image"><img src="img/slideshow/bed.jpg" alt=""></div>
+            <div class="slideshow-image"><img src="img/slideshow/massage.jpg" alt=""></div>
         </div>
         <!-- /slideshow -->
         <div class="content-wrapper">

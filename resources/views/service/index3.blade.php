@@ -158,7 +158,7 @@
                                 <div class="testimonial">
                                     <div class="content">
                                         <p class="description">
-                                            On a recent trip to Lisbon I ended up needing a massage as I have bad hips. I had looked up Siam Smile Thai Massage and was most happy with my hour-long massage. It was a great help and the staff was welcoming despite me not having made a booking ahead. My masseur was very thorough and helpful!!! Definitely recommend this special haven of peace and healing!!
+                                           I came here with my husband on a kids free day, to enjoy some grown up time. We were greeted by Ann and Lee taken care of individually. Ann gave me a therapeutic massage and it was simply stunning. Wonderful lady with magic hands. See you again soon and thank you so much.
                                         </p>
                                     </div>
                                     <!-- /content -->
@@ -167,8 +167,8 @@
                                     </div>
                                     <!-- /testimonial-pic -->
                                     <div class="testimonial-review">
-                                        <h6 class="testimonial-title">Elsa Mendonca Pinto</h6>
-                                        <span>Lawyer</span>
+                                        <h6 class="testimonial-title">Melanie S. Kimwald</h6>
+                                        <span>Teacher</span>
                                     </div>
                                     <!-- /testimonial-review -->
                                 </div>
